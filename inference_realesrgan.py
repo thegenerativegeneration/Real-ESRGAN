@@ -83,6 +83,8 @@ def main():
             'https://github.com/xinntao/Real-ESRGAN/releases/download/v0.2.5.0/realesr-general-wdn-x4v3.pth',
             'https://github.com/xinntao/Real-ESRGAN/releases/download/v0.2.5.0/realesr-general-x4v3.pth'
         ]
+    else:
+        raise NotImplementedError('Model [{:s}] is not found.'.format(args.model_name))
 
     # determine model paths
     if args.model_path is not None:
