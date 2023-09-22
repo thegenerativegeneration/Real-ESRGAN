@@ -238,7 +238,7 @@ def inference_video(args, video_save_path, device=None, total_workers=1, worker_
     if args.face_enhance:  # Use GFPGAN for face enhancement
         from gfpgan import GFPGANer
         face_enhancer = GFPGANer(
-            model_path='https://github.com/TencentARC/GFPGAN/releases/download/v1.3.0/GFPGANv1.3.pth',
+            model_path='https://github.com/TencentARC/GFPGAN/releases/download/v1.3.0/GFPGANv1.4.pth',
             upscale=args.outscale,
             arch='clean',
             channel_multiplier=2,
